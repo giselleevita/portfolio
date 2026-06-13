@@ -180,6 +180,15 @@ h1 {
   color: var(--brand-strong);
   font-weight: 600;
   text-decoration: none;
+  margin-right: 1rem;
+}
+
+.private-work .service-card a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--brand-strong);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .skills-list {
