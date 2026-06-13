@@ -33,8 +33,14 @@ GitHub publishes current IP addresses in [their documentation](https://docs.gith
 
 ## 3. Update Open Graph URLs
 
-After the domain is live, update `og:url` and `og:image` in `index.html` to use the
-custom hostname so link previews resolve correctly.
+Run the helper script (updates `site-config.json`, `index.html`, and writes `CNAME`):
+
+```bash
+chmod +x scripts/enable-custom-domain.sh
+./scripts/enable-custom-domain.sh www.example.com
+```
+
+Or manually update `og:url` and `og:image` in `index.html` to use the custom hostname.
 
 ## 4. Optional repository `CNAME` file
 
