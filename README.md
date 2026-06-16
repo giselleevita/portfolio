@@ -6,14 +6,16 @@ A lightweight portfolio site presenting selected backend, cloud-security, data, 
 
 **Live site:** https://giselleevita.github.io/portfolio
 
-Open Graph metadata and a shareable preview image (`og-image.svg`) are included for link
+Open Graph metadata and a shareable preview image (`og-image.png`) are included for link
 previews. See [`docs/CUSTOM_DOMAIN.md`](docs/CUSTOM_DOMAIN.md) for optional custom-domain
-setup on GitHub Pages.
+setup on GitHub Pages. Share preview uses `og-image.png`.
 
 ## Highlighted Projects
 
-- [agent-security-gate](https://github.com/giselleevita/agent-security-gate) — **v0.4.0**
+- [agent-security-gate](https://github.com/giselleevita/agent-security-gate) — **v0.5.0**
 - [evidentia](https://github.com/giselleevita/evidentia)
+- [aegisais](https://github.com/giselleevita/aegisais)
+- [abrahamic live demo](https://abrahamic.vercel.app)
 - [proofrail-evidence-api](https://github.com/giselleevita/proofrail-evidence-api)
 - [llm-agent-security-benchmark](https://github.com/giselleevita/llm-agent-security-benchmark)
 - [vendor-red-team-passport](https://github.com/giselleevita/vendor-red-team-passport)
