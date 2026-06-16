@@ -6,9 +6,9 @@ A lightweight portfolio site presenting selected backend, cloud-security, data, 
 
 **Live site:** https://giselleevita.github.io/portfolio
 
-Open Graph metadata and a shareable preview image (`og-image.png`) are included for link
+Open Graph metadata and a shareable preview image (`og-image.png`, 1200×630) are included for link
 previews. See [`docs/CUSTOM_DOMAIN.md`](docs/CUSTOM_DOMAIN.md) for optional custom-domain
-setup on GitHub Pages. Share preview uses `og-image.png`.
+setup on GitHub Pages.
 
 ## Highlighted Projects
 
