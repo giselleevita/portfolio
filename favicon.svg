@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Giselle Evita Koch">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#g)"/>
+  <rect x="4" y="4" width="24" height="24" rx="6" fill="none" stroke="#0d8f6f" stroke-width="1.5" opacity="0.9"/>
+  <text x="16" y="21" text-anchor="middle" fill="#34d1a1" font-family="system-ui, sans-serif" font-size="11" font-weight="700">GK</text>
+</svg>
