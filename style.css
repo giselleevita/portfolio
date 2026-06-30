@@ -123,6 +123,24 @@ h1 {
 .subline {
   margin-top: 0.55rem;
   color: var(--muted);
+  max-width: 62ch;
+}
+
+.hero-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.hero-actions a {
+  color: var(--brand-strong);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-actions a:hover {
+  text-decoration: underline;
 }
 
 .section-head p {
