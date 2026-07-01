@@ -8,7 +8,7 @@ A lightweight portfolio site presenting selected backend, cloud-security, data, 
 
 Open Graph metadata and a shareable preview image (`og-image.png`, 1200×630) are included for link
 previews. See [`docs/CUSTOM_DOMAIN.md`](docs/CUSTOM_DOMAIN.md) for optional custom-domain
-setup on GitHub Pages.
+setup on GitHub Pages. Remaining manual steps: [`docs/MANUAL_NEXT_STEPS.md`](docs/MANUAL_NEXT_STEPS.md).
 
 ## Highlighted Projects
 
