@@ -2,15 +2,15 @@
 
 Items that require your account credentials or DNS — not automatable from CI.
 
-## 1. GitHub billing (green CI badges)
+## 1. README badges (no payment required)
 
-GitHub Actions may fail on private repos (e.g. `abrahamic`, `aegisais`) when billing or spending limits block workflow minutes.
+Follow [`docs/BADGE_POLICY.md`](BADGE_POLICY.md):
 
-1. GitHub → **Settings → Billing and plans**
-2. Resolve payment / increase Actions spending limit
-3. Re-run failed workflows on `main`
+- **Public repos** → GitHub Actions CI badge (free, unlimited minutes).
+- **Private repos** → live demo / Vercel badge only; **no** CI badge.
+- Remove any badge that stays red.
 
-Until then, rely on **Vercel** (abrahamic) and local `npm run build` / `docker compose` for review.
+You do **not** need GitHub billing or a payment method for public-repo CI badges.
 
 ## 2. Publish ASG blog cross-posts
 
