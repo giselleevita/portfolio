@@ -2,7 +2,7 @@
 
 [![Deploy](https://github.com/giselleevita/portfolio/actions/workflows/pages.yml/badge.svg)](https://github.com/giselleevita/portfolio/actions/workflows/pages.yml)
 
-A lightweight portfolio site presenting selected backend, cloud-security, data, and AI-governance engineering work. Built with semantic HTML, CSS, and JavaScript and deployed through GitHub Pages.
+AgentOps & AI security platform engineering portfolio — led by agent-security-gate (policy enforcement for LLM tool calls). Built with semantic HTML, CSS, and JavaScript and deployed through GitHub Pages.
 
 **Live site:** https://giselleevita.github.io/portfolio
 
@@ -12,13 +12,11 @@ setup on GitHub Pages. Remaining manual steps: [`docs/MANUAL_NEXT_STEPS.md`](doc
 
 ## Highlighted Projects
 
-- [agent-security-gate](https://github.com/giselleevita/agent-security-gate) — **v0.6.0**
-- [evidentia](https://github.com/giselleevita/evidentia)
-- [aegisais](https://github.com/giselleevita/aegisais)
-- [abrahamic live demo](https://abrahamic.vercel.app)
+- [agent-security-gate](https://github.com/giselleevita/agent-security-gate) — **v0.6.0** · [benchmark results](https://github.com/giselleevita/agent-security-gate/blob/main/docs/benchmark-results/latest.md) · [Fly demo guide](https://github.com/giselleevita/agent-security-gate/blob/main/docs/demo-deployment.md)
+- [security-compliance-copilot](https://github.com/giselleevita/security-compliance-copilot) — RAG + offline evals
+- [sai-platform](https://github.com/giselleevita/sai-platform) — AI governance workflows
+- [vendor-red-team-passport](https://github.com/giselleevita/vendor-red-team-passport) — LLM vendor red-team
 - [proofrail-evidence-api](https://github.com/giselleevita/proofrail-evidence-api)
-- [llm-agent-security-benchmark](https://github.com/giselleevita/llm-agent-security-benchmark)
-- [vendor-red-team-passport](https://github.com/giselleevita/vendor-red-team-passport)
 - [secure-docs-aws](https://github.com/giselleevita/secure-docs-aws)
 
 ## Local Preview
