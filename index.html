@@ -84,10 +84,14 @@
       <section class="hero container reveal">
         <p class="eyebrow">Enforceable AI Security</p>
         <h1>I build enforceable AI security systems</h1>
-        <p class="headline">Policy enforcement, tool-call security, red-team evaluation, RAG governance, and audit evidence</p>
-        <p class="subline">Evaluate vendors → Enforce policy → Govern with evidence → Produce audit trails → Ship securely on cloud</p>
+        <p class="headline">
+          My work focuses on the infrastructure around AI agents: evaluating vendor risk,
+          enforcing policy before tool calls execute, grounding governance in cited knowledge,
+          producing verifiable audit evidence, and shipping secure cloud infrastructure.
+        </p>
+        <p class="subline">Evaluate → Enforce → Govern → Evidence → Ship</p>
         <div class="hero-actions">
-          <a href="https://github.com/giselleevita/agent-security-gate#try-it" target="_blank" rel="noopener noreferrer">Try locally (free)</a>
+          <a href="https://github.com/giselleevita/agent-security-gate#quick-start-local-free" target="_blank" rel="noopener noreferrer">Try locally (free)</a>
           <a href="https://github.com/giselleevita/agent-security-gate/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">ASG v0.6.0</a>
           <a href="https://github.com/giselleevita/agent-security-gate/raw/main/docs/assets/asg-demo.mp4" target="_blank" rel="noopener noreferrer">Demo video</a>
         </div>
@@ -95,8 +99,8 @@
 
       <section class="pipeline container reveal" id="pipeline">
         <div class="section-head">
-          <h2>The stack</h2>
-          <p>Five repositories, one story — not fifteen scattered ideas.</p>
+          <h2>System map</h2>
+          <p>Five repositories, one intentional stack — not a project gallery.</p>
         </div>
         <ol class="pipeline-list">
           <li><span class="pipeline-label">Evaluate</span> Vendor red-team reports</li>
@@ -109,9 +113,23 @@
 
       <section class="projects container reveal" id="projects">
         <div class="section-head">
-          <h2>Featured work</h2>
+          <h2>Five layers</h2>
         </div>
         <div class="card-grid projects-grid">
+          <article class="card project-card">
+            <p class="layer-tag">Evaluate</p>
+            <img
+              src="https://raw.githubusercontent.com/giselleevita/vendor-red-team-passport/main/docs/screenshots/dashboard.png"
+              alt="Vendor Red-Team Passport dashboard"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <h3>vendor-red-team-passport</h3>
+              <p>LLM vendor red-teaming — 10 attack classes, OWASP/NIST mapping, tamper-evident Passport Reports.</p>
+              <a href="https://github.com/giselleevita/vendor-red-team-passport" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              <a href="https://github.com/giselleevita/vendor-red-team-passport/blob/main/docs/CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Case study</a>
+            </div>
+          </article>
           <article class="card project-card project-card--featured">
             <p class="layer-tag">Enforce</p>
             <img
@@ -121,30 +139,17 @@
             />
             <div class="project-body">
               <h3>agent-security-gate</h3>
-              <p>Runtime policy gateway for AI agent tool calls — OPA enforcement, approvals, DLP, hash-chained audit. v0.6.0, 166 tests.</p>
+              <p>Runtime policy gateway for AI agent tool calls — OPA enforcement, approvals, DLP, hash-chained audit. v0.6.0, 167 tests.</p>
               <a href="https://github.com/giselleevita/agent-security-gate" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/technical-brief.md" target="_blank" rel="noopener noreferrer">Technical brief</a>
               <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/blog/agent-security-at-tool-boundary.md" target="_blank" rel="noopener noreferrer">Blog post</a>
             </div>
           </article>
           <article class="card project-card">
-            <p class="layer-tag">Evaluate</p>
-            <img
-              src="https://opengraph.githubassets.com/1/giselleevita/vendor-red-team-passport"
-              alt="Preview of vendor-red-team-passport GitHub repository"
-              loading="lazy"
-            />
-            <div class="project-body">
-              <h3>vendor-red-team-passport</h3>
-              <p>LLM vendor red-teaming — 10 attack classes, OWASP/NIST mapping, tamper-evident Passport Reports.</p>
-              <a href="https://github.com/giselleevita/vendor-red-team-passport" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-          </article>
-          <article class="card project-card">
             <p class="layer-tag">Govern</p>
             <img
-              src="https://opengraph.githubassets.com/1/giselleevita/security-compliance-copilot"
-              alt="Preview of security-compliance-copilot GitHub repository"
+              src="https://raw.githubusercontent.com/giselleevita/security-compliance-copilot/main/docs/screenshots/copilot-ui.png"
+              alt="Security and Compliance Copilot interface"
               loading="lazy"
             />
             <div class="project-body">
@@ -156,8 +161,8 @@
           <article class="card project-card">
             <p class="layer-tag">Evidence</p>
             <img
-              src="https://opengraph.githubassets.com/1/giselleevita/proofrail-evidence-api"
-              alt="Preview of proofrail-evidence-api GitHub repository"
+              src="https://raw.githubusercontent.com/giselleevita/proofrail-evidence-api/main/docs/screenshots/analyst-console.png"
+              alt="ProofRail analyst console"
               loading="lazy"
             />
             <div class="project-body">
@@ -231,7 +236,7 @@
       <section class="cta container reveal" id="contact">
         <h2>Review the stack in 15 minutes</h2>
         <p>Start with <a href="https://github.com/giselleevita/agent-security-gate">agent-security-gate</a> — watch the README GIF or <code>docker compose up</code> in 5 minutes.</p>
-        <p><a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/RECRUITER_PACKET.md" target="_blank" rel="noopener noreferrer">Recruiter packet</a></p>
+        <p><a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/technical-brief.md" target="_blank" rel="noopener noreferrer">Technical brief</a></p>
         <a class="cta-button" href="mailto:giselle.evita@gmail.com">Get in touch</a>
       </section>
     </main>
