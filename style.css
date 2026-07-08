@@ -198,6 +198,58 @@ h1 {
   text-decoration: underline;
 }
 
+.hero-cta {
+  margin-top: 1.25rem;
+}
+
+.hero-cta a {
+  color: var(--brand-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pipeline-list {
+  margin: 1.2rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.pipeline-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-elev);
+}
+
+.pipeline-label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  min-width: 5.5rem;
+}
+
+.layer-tag {
+  margin: 0;
+  padding: 0.55rem 1rem 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.project-card--featured {
+  border-color: color-mix(in srgb, var(--brand) 45%, var(--line));
+}
+
 .section-head p {
   margin: 0;
   color: var(--muted);
@@ -354,6 +406,10 @@ h1 {
   .services-grid,
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-card--featured {
+    grid-column: 1 / -1;
   }
 
   .service-card,
