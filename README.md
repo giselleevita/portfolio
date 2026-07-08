@@ -12,7 +12,7 @@ setup on GitHub Pages. Remaining manual steps: [`docs/MANUAL_NEXT_STEPS.md`](doc
 
 ## Highlighted Projects
 
-- [agent-security-gate](https://github.com/giselleevita/agent-security-gate) — **v0.5.0**
+- [agent-security-gate](https://github.com/giselleevita/agent-security-gate) — **v0.6.0**
 - [evidentia](https://github.com/giselleevita/evidentia)
 - [aegisais](https://github.com/giselleevita/aegisais)
 - [abrahamic live demo](https://abrahamic.vercel.app)
