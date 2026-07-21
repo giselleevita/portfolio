@@ -1,4 +1,4 @@
-# Engineering Portfolio
+# Giselle Evita Koch — Enforceable AI Security
 
 [![Deploy](https://github.com/giselleevita/portfolio/actions/workflows/pages.yml/badge.svg)](https://github.com/giselleevita/portfolio/actions/workflows/pages.yml)
 
@@ -23,3 +23,7 @@ Evaluate → Enforce → Govern → Evidence → Ship
 ## Local preview
 
 Open `index.html` directly or serve the directory with any static HTTP server.
+
+## License
+
+Code (`style.css`, `script.js`, `scripts/`) is MIT-licensed — see [LICENSE](LICENSE). Text and images are all rights reserved.
