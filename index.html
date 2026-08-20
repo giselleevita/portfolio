@@ -6,14 +6,14 @@
     <title>Giselle Evita Koch | Enforceable AI Security</title>
     <meta
       name="description"
-      content="AI security platform engineering — evaluate vendors, enforce agent policy, govern with RAG, produce audit evidence, ship secure cloud infrastructure."
+      content="Fail-closed policy enforcement before AI agent tool calls — OPA authorization, human approvals, hash-chained audit, and an external benchmark with the tradeoffs published."
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Giselle Evita Koch" />
     <meta property="og:title" content="Giselle Evita Koch | Enforceable AI Security" />
     <meta
       property="og:description"
-      content="Evaluate → Enforce → Govern → Evidence → Ship — a focused AI security engineering portfolio."
+      content="A fail-closed policy decision point in front of agent tool calls, measured on AgentDojo with the costs published."
     />
     <link rel="canonical" href="https://giselleevita.github.io/portfolio/" />
     <meta property="og:url" content="https://giselleevita.github.io/portfolio/" />
@@ -30,7 +30,7 @@
     <meta name="twitter:title" content="Giselle Evita Koch | Enforceable AI Security" />
     <meta
       name="twitter:description"
-      content="Evaluate → Enforce → Govern → Evidence → Ship — agent-security-gate and the AI security stack."
+      content="agent-security-gate — authorization at the tool-call boundary, measured on an external benchmark."
     />
     <meta name="author" content="Giselle Evita Koch" />
     <meta name="theme-color" content="#0f172a" />
@@ -68,8 +68,8 @@
     <header class="topbar container">
       <a class="brand" href="#top">Giselle Evita Koch</a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#pipeline">Stack</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Project</a>
+        <a href="#evidence">Evidence</a>
         <a href="#writing">Writing</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -85,104 +85,89 @@
         <p class="eyebrow">Enforceable AI Security</p>
         <h1>I build enforceable AI security systems</h1>
         <p class="headline">
-          My work focuses on the infrastructure around AI agents: evaluating vendor risk,
-          enforcing policy before tool calls execute, grounding governance in cited knowledge,
-          producing verifiable audit evidence, and shipping secure cloud infrastructure.
+          An AI agent turns text into side effects. Prompt filtering changes how often a model is
+          fooled; it does not change what happens when it is. My work sits at the last control
+          before execution — the tool call itself.
         </p>
-        <p class="subline">Evaluate → Enforce → Govern → Evidence → Ship</p>
+        <p class="subline">Agent Security Gate — a fail-closed policy decision point in front of agent tool calls</p>
         <div class="hero-actions">
+          <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md" target="_blank" rel="noopener noreferrer">Read the case study</a>
           <a href="https://github.com/giselleevita/agent-security-gate#quick-start-local-free" target="_blank" rel="noopener noreferrer">Try locally (free)</a>
-          <a href="https://github.com/giselleevita/agent-security-gate/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">ASG v0.6.0</a>
-          <a href="https://github.com/giselleevita/agent-security-gate/raw/main/docs/assets/asg-demo.mp4" target="_blank" rel="noopener noreferrer">Demo video</a>
+          <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/benchmark-results/agentdojo-local.md" target="_blank" rel="noopener noreferrer">Benchmark evidence</a>
         </div>
-      </section>
-
-      <section class="pipeline container reveal" id="pipeline">
-        <div class="section-head">
-          <h2>System map</h2>
-          <p>Five repositories, one intentional stack — not a project gallery.</p>
-        </div>
-        <ol class="pipeline-list">
-          <li><span class="pipeline-label">Evaluate</span> Vendor red-team reports</li>
-          <li><span class="pipeline-label">Enforce</span> Runtime agent security gateway</li>
-          <li><span class="pipeline-label">Govern</span> Cited RAG with offline evals</li>
-          <li><span class="pipeline-label">Evidence</span> Signed compliance bundles</li>
-          <li><span class="pipeline-label">Ship</span> Secure cloud reference architecture</li>
-        </ol>
       </section>
 
       <section class="projects container reveal" id="projects">
         <div class="section-head">
-          <h2>Five layers</h2>
+          <h2>The artifact</h2>
+          <p>One system, measured against an external benchmark instead of my own fixtures.</p>
         </div>
         <div class="card-grid projects-grid">
-          <article class="card project-card">
-            <p class="layer-tag">Evaluate</p>
-            <img
-              src="https://raw.githubusercontent.com/giselleevita/vendor-red-team-passport/main/docs/screenshots/dashboard.png"
-              alt="Vendor Red-Team Passport dashboard"
-              loading="lazy"
-            />
-            <div class="project-body">
-              <h3>vendor-red-team-passport</h3>
-              <p>LLM vendor red-teaming — 10 attack classes, OWASP/NIST mapping, tamper-evident Passport Reports.</p>
-              <a href="https://github.com/giselleevita/vendor-red-team-passport" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-              <a href="https://github.com/giselleevita/vendor-red-team-passport/blob/main/docs/CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Case study</a>
-            </div>
-          </article>
           <article class="card project-card project-card--featured">
             <p class="layer-tag">Enforce</p>
             <img
               src="https://raw.githubusercontent.com/giselleevita/agent-security-gate/main/docs/assets/asg-demo.gif"
-              alt="Agent Security Gate demo — blocked unsafe tool call and audit trace"
+              alt="Agent Security Gate blocking an unsafe tool call and recording the decision"
               loading="lazy"
             />
             <div class="project-body">
               <h3>agent-security-gate</h3>
-              <p>Runtime policy gateway for AI agent tool calls — OPA enforcement, approvals, DLP, hash-chained audit, and reproducible benchmark evidence.</p>
-              <a href="https://github.com/giselleevita/agent-security-gate" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              <p>
+                Authorization runs immediately before the callable and answers exactly one of
+                allow, deny, or require approval. Only an explicit allow reaches the function:
+                a denial, a malformed response, a timeout, or an unreachable policy engine all
+                mean not executed. OPA/Rego policy, operation-bound human approvals, and a
+                hash-chained audit trail behind it.
+              </p>
+              <a href="https://github.com/giselleevita/agent-security-gate" target="_blank" rel="noopener noreferrer">Repository</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md" target="_blank" rel="noopener noreferrer">Case study</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/agentdojo-benchmark.md" target="_blank" rel="noopener noreferrer">Benchmark protocol</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/agent-security-gate-threat-model.md" target="_blank" rel="noopener noreferrer">Threat model</a>
               <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/technical-brief.md" target="_blank" rel="noopener noreferrer">Technical brief</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/blog/agent-security-at-tool-boundary.md" target="_blank" rel="noopener noreferrer">Blog post</a>
             </div>
           </article>
-          <article class="card project-card">
-            <p class="layer-tag">Govern</p>
-            <img
-              src="https://raw.githubusercontent.com/giselleevita/security-compliance-copilot/main/docs/screenshots/copilot-ui.png"
-              alt="Security and Compliance Copilot interface"
-              loading="lazy"
-            />
-            <div class="project-body">
-              <h3>security-compliance-copilot</h3>
-              <p>Grounded NIST/CISA RAG with citations, guardrails, and offline evals. Guidance layer — not runtime enforcement.</p>
-              <a href="https://github.com/giselleevita/security-compliance-copilot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
+        </div>
+      </section>
+
+      <section class="pipeline container reveal" id="evidence">
+        <div class="section-head">
+          <h2>What was measured</h2>
+          <p>AgentDojo Banking suite, a local model, and a protocol frozen in git before any run.</p>
+        </div>
+        <ol class="pipeline-list">
+          <li><span class="pipeline-label">Blocked</span> every attacker goal the unprotected agent reached — 6 of 6</li>
+          <li><span class="pipeline-label">Policy</span> 0 policy-violating tool calls executed, against 11 without the gate</li>
+          <li><span class="pipeline-label">Cost</span> 3 of 72 benign cases lost, all on a task that needs an approval-gated tool</li>
+          <li><span class="pipeline-label">Latency</span> 8 ms median, 13.5 ms p95 across 1,380 replayed authorizations</li>
+          <li><span class="pipeline-label">Failure</span> policy engine stopped: 70 of 70 calls denied, nothing executed</li>
+        </ol>
+        <p class="subline">
+          Scored-case security was 100% with and without the gate — this local model rarely followed
+          the injection. The arms only separate in the standalone attacker-goal runs, and the
+          published results say so rather than averaging it away.
+        </p>
+      </section>
+
+      <section class="private-work container reveal" id="status">
+        <div class="section-head">
+          <h2>Review status</h2>
+          <p>Stated as it is.</p>
+        </div>
+        <div class="card-grid services-grid">
+          <article class="card service-card">
+            <h3>Upstream proposal</h3>
+            <p>A generic pre-execution authorizer seam proposed to AgentDojo. Open, awaiting a maintainer response.</p>
+            <a href="https://github.com/ethz-spylab/agentdojo/issues/184" target="_blank" rel="noopener noreferrer">AgentDojo issue #184</a>
           </article>
-          <article class="card project-card">
-            <p class="layer-tag">Evidence</p>
-            <img
-              src="https://raw.githubusercontent.com/giselleevita/proofrail-evidence-api/main/docs/screenshots/analyst-console.png"
-              alt="ProofRail analyst console"
-              loading="lazy"
-            />
-            <div class="project-body">
-              <h3>proofrail-evidence-api</h3>
-              <p>Signed, verifiable evidence bundles for compliance workflows — audit-ready records, not just logs.</p>
-              <a href="https://github.com/giselleevita/proofrail-evidence-api" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
+          <article class="card service-card">
+            <h3>Independent reproduction</h3>
+            <p>None yet. Everything published is my own evaluation, reproducible from a clean checkout with one command.</p>
+            <a href="https://github.com/giselleevita/agent-security-gate/blob/main/scripts/verify.sh" target="_blank" rel="noopener noreferrer">verify.sh</a>
           </article>
-          <article class="card project-card">
-            <p class="layer-tag">Ship</p>
-            <img
-              src="https://opengraph.githubassets.com/1/giselleevita/secure-docs-aws"
-              alt="Preview of secure-docs-aws GitHub repository"
-              loading="lazy"
-            />
-            <div class="project-body">
-              <h3>secure-docs-aws</h3>
-              <p>Serverless AWS document storage — Cognito, KMS, presigned URLs, ownership checks, audit logging.</p>
-              <a href="https://github.com/giselleevita/secure-docs-aws" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
+          <article class="card service-card">
+            <h3>Authorship</h3>
+            <p>Who wrote what, and how AI assistance was used during development.</p>
+            <a href="https://github.com/giselleevita/agent-security-gate/blob/main/AUTHORS.md" target="_blank" rel="noopener noreferrer">AUTHORS.md</a>
           </article>
         </div>
       </section>
@@ -190,23 +175,48 @@
       <section class="writing container reveal" id="writing">
         <div class="section-head">
           <h2>Writing</h2>
-          <p>Technical notes on agent security and engineering practice.</p>
-        </div>
-        <article class="card service-card">
-          <h3>Why Agent Security Belongs at the Tool-Call Boundary</h3>
-          <p>Pre-execution policy enforcement for tool-using LLM agents — where controls actually matter.</p>
-          <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/blog/agent-security-at-tool-boundary.md" target="_blank" rel="noopener noreferrer">Read on GitHub</a>
-          <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/blog/agent-security-at-tool-boundary.md" target="_blank" rel="noopener noreferrer">Why Agent Security Belongs at the Tool-Call Boundary</a>
-          <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/blog/how-to-evaluate-denial-feedback-honestly.md" target="_blank" rel="noopener noreferrer">The Denial-Feedback Dilemma</a>
-        </article>
-      </section>
-
-      <section class="private-work container reveal" id="private-work">
-        <div class="section-head">
-          <h2>Supporting work</h2>
-          <p>Additional repositories available for deeper technical review.</p>
+          <p>Technical notes on agent security and how to evaluate it honestly.</p>
         </div>
         <div class="card-grid services-grid">
+          <article class="card service-card">
+            <h3>Why Agent Security Belongs at the Tool-Call Boundary</h3>
+            <p>Pre-execution policy enforcement for tool-using LLM agents — where controls actually matter.</p>
+            <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/blog/agent-security-at-tool-boundary.md" target="_blank" rel="noopener noreferrer">Read on GitHub</a>
+          </article>
+          <article class="card service-card">
+            <h3>The Denial-Feedback Dilemma</h3>
+            <p>Evaluating what an agent does after it is blocked, without overstating the evidence.</p>
+            <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/blog/how-to-evaluate-denial-feedback-honestly.md" target="_blank" rel="noopener noreferrer">Read on GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="private-work container reveal" id="supporting">
+        <div class="section-head">
+          <h2>Supporting work</h2>
+          <p>Earlier repositories. Context for the main artifact, not competing with it.</p>
+        </div>
+        <div class="card-grid services-grid">
+          <article class="card service-card">
+            <h3>vendor-red-team-passport</h3>
+            <p>LLM vendor red-teaming — 10 attack classes, OWASP/NIST mapping, tamper-evident reports.</p>
+            <a href="https://github.com/giselleevita/vendor-red-team-passport" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="card service-card">
+            <h3>security-compliance-copilot</h3>
+            <p>Grounded NIST/CISA RAG with citations, guardrails, and offline evals. Guidance, not enforcement.</p>
+            <a href="https://github.com/giselleevita/security-compliance-copilot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="card service-card">
+            <h3>proofrail-evidence-api</h3>
+            <p>Signed, verifiable evidence bundles for compliance workflows — audit-ready records, not just logs.</p>
+            <a href="https://github.com/giselleevita/proofrail-evidence-api" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="card service-card">
+            <h3>secure-docs-aws</h3>
+            <p>Serverless AWS document storage — Cognito, KMS, presigned URLs, ownership checks, audit logging.</p>
+            <a href="https://github.com/giselleevita/secure-docs-aws" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
           <article class="card service-card">
             <h3>aegisais</h3>
             <p>Maritime AIS integrity checker with anomaly detection, map UI, and alert workflows.</p>
@@ -228,15 +238,14 @@
           <li>AI Security Engineer</li>
           <li>Agentic AI Platform Engineer</li>
           <li>LLM Security Engineer</li>
-          <li>AI Governance Engineer</li>
+          <li>Platform Security Engineer</li>
           <li>Security Engineer, AI Systems</li>
         </ul>
       </section>
 
       <section class="cta container reveal" id="contact">
-        <h2>Review the stack in 15 minutes</h2>
-        <p>Start with <a href="https://github.com/giselleevita/agent-security-gate">agent-security-gate</a> — watch the README GIF or <code>docker compose up</code> in 5 minutes.</p>
-        <p><a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/technical-brief.md" target="_blank" rel="noopener noreferrer">Technical brief</a></p>
+        <h2>Review it in 15 minutes</h2>
+        <p>Start with the <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md">case study</a>, then <code>docker compose up -d --build</code> and send the four demo requests in the <a href="https://github.com/giselleevita/agent-security-gate">README</a>.</p>
         <a class="cta-button" href="mailto:giselle.evita@gmail.com">Get in touch</a>
       </section>
     </main>
