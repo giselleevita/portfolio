@@ -16,6 +16,8 @@ policy authorization immediately before an agent tool call.
 
 - [Case study](https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md)
 - [Benchmark evidence](https://github.com/giselleevita/agent-security-gate/blob/main/docs/benchmark-results/agentdojo-local.md)
+- [Security reviewer guide](https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/security-reviewer-guide.md)
+- [Independent reproduction request](https://github.com/giselleevita/agent-security-gate/issues/65) — no independent validation is claimed yet
 - [Upstream proposal — AgentDojo issue #184](https://github.com/ethz-spylab/agentdojo/issues/184) (open)
 
 Supporting repositories, listed as context rather than as equal projects:
