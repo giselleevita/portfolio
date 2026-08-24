@@ -20,12 +20,11 @@ policy authorization immediately before an agent tool call.
 - [Independent reproduction request](https://github.com/giselleevita/agent-security-gate/issues/65) — no independent validation is claimed yet
 - [Upstream proposal — AgentDojo issue #184](https://github.com/ethz-spylab/agentdojo/issues/184) (open)
 
-Supporting repositories, listed as context rather than as equal projects:
-[vendor-red-team-passport](https://github.com/giselleevita/vendor-red-team-passport),
-[security-compliance-copilot](https://github.com/giselleevita/security-compliance-copilot),
-[proofrail-evidence-api](https://github.com/giselleevita/proofrail-evidence-api),
-[secure-docs-aws](https://github.com/giselleevita/secure-docs-aws),
-[aegisais](https://github.com/giselleevita/aegisais).
+Two supporting repositories show the work on either side of the enforcement boundary:
+[vendor-red-team-passport](https://github.com/giselleevita/vendor-red-team-passport)
+evaluates model/API behaviour, and
+[secure-docs-aws](https://github.com/giselleevita/secure-docs-aws) shows a small,
+threat-model-driven AWS implementation.
 
 ## Local preview
 
