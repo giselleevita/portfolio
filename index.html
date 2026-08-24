@@ -91,9 +91,9 @@
         </p>
         <p class="subline">Agent Security Gate — a fail-closed policy decision point in front of agent tool calls</p>
         <div class="hero-actions">
-          <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md" target="_blank" rel="noopener noreferrer">Read the case study</a>
-          <a href="https://github.com/giselleevita/agent-security-gate#quick-start-local-free" target="_blank" rel="noopener noreferrer">Try locally (free)</a>
-          <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/benchmark-results/agentdojo-local.md" target="_blank" rel="noopener noreferrer">Benchmark evidence</a>
+          <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/security-reviewer-guide.md" target="_blank" rel="noopener noreferrer">Security reviewer guide</a>
+          <a href="https://github.com/giselleevita/agent-security-gate/tree/v0.7.1#quick-start-local-free" target="_blank" rel="noopener noreferrer">Try v0.7.1 locally (free)</a>
+          <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/benchmark-results/agentdojo-local.md" target="_blank" rel="noopener noreferrer">Benchmark evidence</a>
         </div>
       </section>
 
@@ -111,7 +111,7 @@
               loading="lazy"
             />
             <div class="project-body">
-              <h3>agent-security-gate</h3>
+              <h3>agent-security-gate v0.7.1</h3>
               <p>
                 Authorization runs immediately before the callable and answers exactly one of
                 allow, deny, or require approval. Only an explicit allow reaches the function:
@@ -119,11 +119,11 @@
                 mean not executed. OPA/Rego policy, operation-bound human approvals, and a
                 hash-chained audit trail behind it.
               </p>
-              <a href="https://github.com/giselleevita/agent-security-gate" target="_blank" rel="noopener noreferrer">Repository</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md" target="_blank" rel="noopener noreferrer">Case study</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/agentdojo-benchmark.md" target="_blank" rel="noopener noreferrer">Benchmark protocol</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/agent-security-gate-threat-model.md" target="_blank" rel="noopener noreferrer">Threat model</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/technical-brief.md" target="_blank" rel="noopener noreferrer">Technical brief</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/tree/v0.7.1" target="_blank" rel="noopener noreferrer">Release source</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/case-study.md" target="_blank" rel="noopener noreferrer">Case study</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/agentdojo-benchmark.md" target="_blank" rel="noopener noreferrer">Benchmark protocol</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/agent-security-gate-threat-model.md" target="_blank" rel="noopener noreferrer">Threat model</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/security_best_practices_report.md" target="_blank" rel="noopener noreferrer">Internal pre-review</a>
             </div>
           </article>
         </div>
@@ -135,7 +135,7 @@
           <p>AgentDojo Banking suite, a local model, and a protocol frozen in git before any run.</p>
         </div>
         <ol class="pipeline-list">
-          <li><span class="pipeline-label">Blocked</span> every attacker goal the unprotected agent reached — 6 of 6</li>
+          <li><span class="pipeline-label">Goals</span> standalone attacker-goal success fell from 6/9 without ASG to 0/9 with ASG</li>
           <li><span class="pipeline-label">Policy</span> 0 policy-violating tool calls executed, against 11 without the gate</li>
           <li><span class="pipeline-label">Cost</span> 3 of 72 benign cases lost, all on a task that needs an approval-gated tool</li>
           <li><span class="pipeline-label">Latency</span> 8 ms median, 13.5 ms p95 across 1,380 replayed authorizations</li>
@@ -161,13 +161,13 @@
           </article>
           <article class="card service-card">
             <h3>Independent reproduction</h3>
-            <p>None yet. Everything published is my own evaluation, reproducible from a clean checkout with one command.</p>
-            <a href="https://github.com/giselleevita/agent-security-gate/blob/main/scripts/verify.sh" target="_blank" rel="noopener noreferrer">verify.sh</a>
+            <p>None yet. Everything published is candidate-authored; external reviewers are explicitly invited to falsify it.</p>
+            <a href="https://github.com/giselleevita/agent-security-gate/issues/65" target="_blank" rel="noopener noreferrer">Independent reproduction request</a>
           </article>
           <article class="card service-card">
             <h3>Authorship</h3>
-            <p>Who wrote what, and how AI assistance was used during development.</p>
-            <a href="https://github.com/giselleevita/agent-security-gate/blob/main/AUTHORS.md" target="_blank" rel="noopener noreferrer">AUTHORS.md</a>
+            <p>Giselle designed, implemented, tested, and owns the final work; the authorship note explains an early Git identity mismatch.</p>
+            <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/AUTHORS.md" target="_blank" rel="noopener noreferrer">AUTHORS.md</a>
           </article>
         </div>
       </section>
@@ -245,7 +245,7 @@
 
       <section class="cta container reveal" id="contact">
         <h2>Review it in 15 minutes</h2>
-        <p>Start with the <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md">case study</a>, then <code>docker compose up -d --build</code> and send the four demo requests in the <a href="https://github.com/giselleevita/agent-security-gate">README</a>.</p>
+        <p>Start with the <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/security-reviewer-guide.md">reviewer guide</a>, run the five-minute protected-function and OPA-outage demo, and report any bypass or unsupported claim.</p>
         <a class="cta-button" href="mailto:giselle.evita@gmail.com">Get in touch</a>
       </section>
     </main>
