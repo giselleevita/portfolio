@@ -421,3 +421,9 @@ h1 {
     padding: 3rem 0;
   }
 }
+
+.cta-alt {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
