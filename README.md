@@ -20,11 +20,13 @@ policy authorization immediately before an agent tool call.
 - [Independent reproduction request](https://github.com/giselleevita/agent-security-gate/issues/65) — no independent validation is claimed yet
 - [Upstream proposal — AgentDojo issue #184](https://github.com/ethz-spylab/agentdojo/issues/184) (open)
 
-Two supporting repositories show the work on either side of the enforcement boundary:
-[vendor-red-team-passport](https://github.com/giselleevita/vendor-red-team-passport)
-evaluates model/API behaviour, and
-[secure-docs-aws](https://github.com/giselleevita/secure-docs-aws) shows a small,
-threat-model-driven AWS implementation.
+Three 90-second proof paths complement that central artifact:
+[ToolShield](https://giselleevita.github.io/ToolShield/) evaluates prompt-injection
+detectors under distribution shift, the
+[DK Security Pack](https://github.com/giselleevita/dk-procurement-security-pack-generator)
+demonstrates independently verifiable evidence, and
+[Abrahamic](https://abrahamic.vercel.app) demonstrates licensed-content boundaries,
+role-aware publishing, and transactional audit history in a full-stack application.
 
 ## Local preview
 
