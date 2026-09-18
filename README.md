@@ -17,6 +17,7 @@ policy authorization immediately before an agent tool call.
 - [Case study](https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md)
 - [Benchmark evidence](https://github.com/giselleevita/agent-security-gate/blob/main/docs/benchmark-results/agentdojo-local.md)
 - [Security reviewer guide](https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/security-reviewer-guide.md)
+- [Trace-correlation runbook](https://github.com/giselleevita/agent-security-gate/blob/main/docs/runbooks/observability.md) — optional OpenTelemetry support on `main`, disabled unless an OTLP endpoint is configured
 - [Independent reproduction request](https://github.com/giselleevita/agent-security-gate/issues/65) — no independent validation is claimed yet
 - [Upstream proposal — AgentDojo issue #184](https://github.com/ethz-spylab/agentdojo/issues/184) (open)
 
@@ -27,6 +28,12 @@ detectors under distribution shift, the
 demonstrates independently verifiable evidence, and
 [Abrahamic](https://abrahamic.vercel.app) demonstrates licensed-content boundaries,
 role-aware publishing, and transactional audit history in a full-stack application.
+
+The current `main` branches also publish inspectable operational-hardening
+evidence: [ToolShield API failure handling](https://github.com/giselleevita/ToolShield/blob/main/tests/test_demo.py),
+[Evidentia webhook retry and lease policy](https://github.com/giselleevita/evidentia/blob/main/backend/integration-service/src/test/kotlin/com/evidentia/integration/application/WebhookDispatchPolicyTest.kt),
+and [DK Security Pack key-safety tests](https://github.com/giselleevita/dk-procurement-security-pack-generator/blob/main/backend/tests/test_pack_signing_safety.py).
+These remain reference implementations, not production-readiness or certification claims.
 
 ## Local preview
 

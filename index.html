@@ -124,6 +124,7 @@
               <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/agentdojo-benchmark.md" target="_blank" rel="noopener noreferrer">Benchmark protocol</a>
               <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/agent-security-gate-threat-model.md" target="_blank" rel="noopener noreferrer">Threat model</a>
               <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/security_best_practices_report.md" target="_blank" rel="noopener noreferrer">Internal pre-review</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/runbooks/observability.md" target="_blank" rel="noopener noreferrer">Trace-correlation runbook (main)</a>
             </div>
           </article>
         </div>
@@ -200,14 +201,14 @@
           <article class="card service-card">
             <p class="layer-tag">Evaluate</p>
             <h3>ToolShield</h3>
-            <p>Prompt-injection evaluation across random, unseen-attack, and unseen-tool splits, with visible provenance and honest seed limitations.</p>
+            <p>Prompt-injection evaluation across random, unseen-attack, and unseen-tool splits, plus bounded API inputs, readiness checks, authenticated configuration, and optional fail-closed audit persistence.</p>
             <a href="https://giselleevita.github.io/ToolShield/" target="_blank" rel="noopener noreferrer">Open results explorer</a>
             <a href="https://github.com/giselleevita/ToolShield/blob/main/docs/90_SECOND_DEMO.md" target="_blank" rel="noopener noreferrer">90-second path</a>
           </article>
           <article class="card service-card">
             <p class="layer-tag">Verify</p>
             <h3>DK Security Pack</h3>
-            <p>Tenant-scoped evidence becomes an Ed25519-signed pack; an independent verifier accepts the original and rejects a deliberately modified artifact.</p>
+            <p>Tenant-scoped evidence becomes an Ed25519-signed pack; key loading fails closed, rotation is explicit and atomic, and embedded public keys keep historical packs independently verifiable.</p>
             <a href="https://github.com/giselleevita/dk-procurement-security-pack-generator" target="_blank" rel="noopener noreferrer">View repository</a>
             <a href="https://github.com/giselleevita/dk-procurement-security-pack-generator/blob/main/docs/90_SECOND_DEMO.md" target="_blank" rel="noopener noreferrer">90-second path</a>
           </article>
