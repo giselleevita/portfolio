@@ -91,9 +91,9 @@
         </p>
         <p class="subline">Agent Security Gate — a fail-closed policy decision point in front of agent tool calls</p>
         <div class="hero-actions">
-          <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/security-reviewer-guide.md" target="_blank" rel="noopener noreferrer">Security reviewer guide</a>
-          <a href="https://github.com/giselleevita/agent-security-gate/tree/v0.7.1#quick-start-local-free" target="_blank" rel="noopener noreferrer">Try v0.7.1 locally (free)</a>
-          <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/benchmark-results/agentdojo-local.md" target="_blank" rel="noopener noreferrer">Benchmark evidence</a>
+          <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/docs/security-reviewer-guide.md" target="_blank" rel="noopener noreferrer">Security reviewer guide</a>
+          <a href="https://github.com/giselleevita/agent-security-gate/tree/v0.7.2#quick-start-local-free" target="_blank" rel="noopener noreferrer">Try v0.7.2 locally (free)</a>
+          <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/docs/benchmark-results/agentdojo-local.md" target="_blank" rel="noopener noreferrer">Benchmark evidence</a>
         </div>
       </section>
 
@@ -111,19 +111,22 @@
               loading="lazy"
             />
             <div class="project-body">
-              <h3>agent-security-gate v0.7.1</h3>
+              <h3>agent-security-gate v0.7.2</h3>
               <p>
                 Authorization runs immediately before the callable and answers exactly one of
                 allow, deny, or require approval. Only an explicit allow reaches the function:
                 a denial, a malformed response, a timeout, or an unreachable policy engine all
                 mean not executed. OPA/Rego policy, operation-bound human approvals, and a
-                hash-chained audit trail behind it.
+                hash-chained audit trail behind it. The v0.7.2 hardening release tightened SSRF connection
+                reuse, policy-exception auditing, DLP audit events, and bounded policy checks; the published
+                AgentDojo evidence is unchanged.
               </p>
-              <a href="https://github.com/giselleevita/agent-security-gate/tree/v0.7.1" target="_blank" rel="noopener noreferrer">Release source</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/case-study.md" target="_blank" rel="noopener noreferrer">Case study</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/agentdojo-benchmark.md" target="_blank" rel="noopener noreferrer">Benchmark protocol</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/agent-security-gate-threat-model.md" target="_blank" rel="noopener noreferrer">Threat model</a>
-              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/security_best_practices_report.md" target="_blank" rel="noopener noreferrer">Internal pre-review</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/tree/v0.7.2" target="_blank" rel="noopener noreferrer">Release source</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/releases/tag/v0.7.2" target="_blank" rel="noopener noreferrer">v0.7.2 hardening notes</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/docs/case-study.md" target="_blank" rel="noopener noreferrer">Case study</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/docs/agentdojo-benchmark.md" target="_blank" rel="noopener noreferrer">Benchmark protocol</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/docs/agent-security-gate-threat-model.md" target="_blank" rel="noopener noreferrer">Threat model</a>
+              <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/security_best_practices_report.md" target="_blank" rel="noopener noreferrer">Internal pre-review</a>
               <a href="https://github.com/giselleevita/agent-security-gate/blob/main/docs/runbooks/observability.md" target="_blank" rel="noopener noreferrer">Trace-correlation runbook (main)</a>
             </div>
           </article>
@@ -168,7 +171,7 @@
           <article class="card service-card">
             <h3>Authorship</h3>
             <p>Giselle designed, implemented, tested, and owns the final work; the authorship note explains an early Git identity mismatch.</p>
-            <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/AUTHORS.md" target="_blank" rel="noopener noreferrer">AUTHORS.md</a>
+            <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/AUTHORS.md" target="_blank" rel="noopener noreferrer">AUTHORS.md</a>
           </article>
         </div>
       </section>
@@ -249,7 +252,7 @@
 
       <section class="cta container reveal" id="contact">
         <h2>Review it in 15 minutes</h2>
-        <p>Start with the <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/security-reviewer-guide.md">reviewer guide</a>, run the five-minute protected-function and OPA-outage demo, and report any bypass or unsupported claim.</p>
+        <p>Start with the <a href="https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/docs/security-reviewer-guide.md">v0.7.2 reviewer guide</a>, run the five-minute protected-function and OPA-outage demo, and report any bypass or unsupported claim.</p>
         <p>Available for full-time technical roles in Greater Copenhagen now and Zürich/Zug from June 2027.</p>
         <a class="cta-button" href="mailto:giselle.evita@gmail.com">Get in touch</a>
       </section>

@@ -16,7 +16,8 @@ policy authorization immediately before an agent tool call.
 
 - [Case study](https://github.com/giselleevita/agent-security-gate/blob/main/docs/case-study.md)
 - [Benchmark evidence](https://github.com/giselleevita/agent-security-gate/blob/main/docs/benchmark-results/agentdojo-local.md)
-- [Security reviewer guide](https://github.com/giselleevita/agent-security-gate/blob/v0.7.1/docs/security-reviewer-guide.md)
+- [Security reviewer guide](https://github.com/giselleevita/agent-security-gate/blob/v0.7.2/docs/security-reviewer-guide.md)
+- [v0.7.2 hardening release](https://github.com/giselleevita/agent-security-gate/releases/tag/v0.7.2) — SSRF connection reuse, policy-exception auditing, DLP audit events, and bounded policy-invariant checks; AgentDojo evidence is unchanged.
 - [Trace-correlation runbook](https://github.com/giselleevita/agent-security-gate/blob/main/docs/runbooks/observability.md) — optional OpenTelemetry support on `main`, disabled unless an OTLP endpoint is configured
 - [Independent reproduction request](https://github.com/giselleevita/agent-security-gate/issues/65) — no independent validation is claimed yet
 - [Upstream proposal — AgentDojo issue #184](https://github.com/ethz-spylab/agentdojo/issues/184) (open)
